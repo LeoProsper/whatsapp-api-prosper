@@ -8,9 +8,6 @@ const { phoneNumberFormatter } = require('./helpers/formatter');
 const axios = require('axios');
 const port = process.env.PORT || 8000;
 
-const sheetdb = require("sheetdb-node");
-const clientSheet = sheetdb({ address: 'zem1vtdba5tan' });
-
 const app = express();
 const server = http.createServer(app);
 const io = socketIO(server);
